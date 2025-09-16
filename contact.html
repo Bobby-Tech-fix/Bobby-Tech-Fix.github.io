@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
-  <!-- Top header -->
+
+<body>
+  <!-- Top Header -->
   <div class="header_top_section bg-dark text-white py-2">
     <div class="container d-flex justify-content-between align-items-center">
       <div><i class="fa-solid fa-location-dot me-2"></i> 87-Ndumbuini Road, Kikuyu, Kenya</div>
@@ -20,14 +21,14 @@
       <div><i class="fa-solid fa-envelope me-2"></i> bobbytech.fix@gmail.com</div>
     </div>
   </div>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
         <img src="images/logo.png" alt="Bobby Tech Logo" style="height: 40px;"> Bobby Tech
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -35,23 +36,23 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link active" href="academy.html">Academy</a></li>
+          <li class="nav-item"><a class="nav-link" href="academy.html">Academy</a></li>
           <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
         </ul>
-        <a href="contact.html" class="btn btn-primary ms-lg-3">Enroll Now</a>
+        <a href="contact.html" class="btn btn-primary ms-lg-3">Book a Repair</a>
       </div>
     </div>
   </nav>
+
   <!-- Hero Banner -->
-  <section class="contact_hero py-5 text-white text-center" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('images/contact-hero.jpg') center/cover no-repeat;">
-    <div class="container">
-      <h1 class="fw-bold">Contact Bobby Tech</h1>
-      <p class="lead">We’re here to help — reach out anytime.</p>
+  <section class="contact_hero py-5 text-white" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('images/contact-hero.jpg') center/cover no-repeat;">
+    <div class="container text-center">
+      <h1 class="fw-bold mb-3">Contact Bobby Tech</h1>
+      <p class="lead mb-0">We’re here to help — reach out anytime.</p>
     </div>
   </section>
-
-  <!-- Contact Info & Form -->
+    <!-- Contact Info & Form -->
   <section class="contact_section py-5 bg-light">
     <div class="container">
       <div class="row g-4">
@@ -91,7 +92,7 @@
       <iframe src="https://www.google.com/maps?q=87+Ndumbuini+Road,+Kikuyu,+Kenya&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
-  <!-- Footer -->
+    <!-- Footer -->
   <footer class="footer_section bg-dark text-white pt-5 pb-4">
     <div class="container">
       <div class="row">
@@ -157,13 +158,11 @@
   <!-- Highlight active nav link -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const path = location.pathname.split('/').pop() || 'services.html';
+      const path = location.pathname.split('/').pop() || 'contact.html';
       document.querySelectorAll('.navbar .nav-link').forEach(link => {
         if (link.getAttribute('href') === path) link.classList.add('active');
       });
     });
   </script>
 </body>
-
 </html>
-
