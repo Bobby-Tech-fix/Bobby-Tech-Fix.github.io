@@ -53,17 +53,39 @@
       <a href="#products" class="btn btn-warning btn-lg mt-3">Browse Products</a>
     </div>
   </section>
+
+  <!-- Search & Filter -->
+  <section class="shop_filters py-4 bg-light">
+    <div class="container text-center">
+      <div class="row justify-content-center g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Search products...">
+        </div>
+        <div class="col-md-4">
+          <select class="form-select">
+            <option selected>All Categories</option>
+            <option>Accessories</option>
+            <option>Refurbished Phones</option>
+            <option>Repair Tools</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Product Grid -->
   <section id="products" class="py-5 bg-light">
     <div class="container">
       <div class="row g-4">
         <!-- Product 1 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm d-flex flex-column">
             <img src="images/product-phone-case.jpg" class="card-img-top" alt="Phone Case">
-            <div class="card-body text-center">
+            <div class="card-body text-center flex-grow-1">
               <h5 class="card-title">Silicone Phone Case</h5>
               <p class="text-muted">KSh 450</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-center">
               <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
             </div>
           </div>
@@ -71,11 +93,13 @@
 
         <!-- Product 2 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm d-flex flex-column">
             <img src="images/product-refurbished-phone.jpg" class="card-img-top" alt="Refurbished Phone">
-            <div class="card-body text-center">
+            <div class="card-body text-center flex-grow-1">
               <h5 class="card-title">Refurbished Samsung A12</h5>
               <p class="text-muted">KSh 9,800</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-center">
               <a href="#" class="btn btn-outline-success btn-sm">Buy Now</a>
             </div>
           </div>
@@ -83,11 +107,13 @@
 
         <!-- Product 3 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm d-flex flex-column">
             <img src="images/product-toolkit.jpg" class="card-img-top" alt="Repair Toolkit">
-            <div class="card-body text-center">
+            <div class="card-body text-center flex-grow-1">
               <h5 class="card-title">Mini Repair Toolkit</h5>
               <p class="text-muted">KSh 1,200</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-center">
               <a href="#" class="btn btn-outline-warning btn-sm">Add to Cart</a>
             </div>
           </div>
@@ -168,4 +194,5 @@
     });
   </script>
 </body>
+
 </html>
